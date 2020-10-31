@@ -1,0 +1,25 @@
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	&__logo {
+		height: 150px;
+		width: auto;
+	}
+	&__icon {
+		font-size: 48px;
+		color: #5d6b7e;
+		&.icon-search {
+			transform: rotateY(180deg);
+		}
+	}
+	.btn {
+		text-transform: uppercase;
+	}
+	&.main__navbar {
+		position: fixed;
+		width: 100vw;
+		top: 0;
+		z-index: 1;
+	}
+}
