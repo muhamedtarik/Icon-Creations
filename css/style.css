@@ -420,6 +420,7 @@ body {
   .slider .carousel-item {
     background-size: inherit;
     background-position: 40% 13%;
+    background-attachment: unset;
   }
 }
 

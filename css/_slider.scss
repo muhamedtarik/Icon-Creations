@@ -8,6 +8,7 @@
             @media (min-width: 320px) and (max-width: 992px) {
                 background-size: inherit;
                 background-position: 40% 13%;
+                background-attachment: unset;
             }
             &.active,
             &-next,
