@@ -29,7 +29,7 @@
                     &-text {
                         border-top: 1.5px solid #5d6b7e;
                         padding: 2rem 0;
-                        @media (min-width: 320px) and (max-width: 992px) {
+                        @media (min-width: 320px) and (max-width: 767px) {
                             padding: 2rem 1rem;
                         }
                     }
@@ -37,14 +37,14 @@
                         color: #38506c;
                         font-size: 25px;
                         font-weight: bold;
-                        @media (min-width: 320px) and (max-width: 992px) {
+                        @media (min-width: 320px) and (max-width: 767px) {
                             font-size: 20px;
                         }
                     }
                     &-sub__heading {
                         font-size: 18px;
                         color: #38506c;
-                        @media (min-width: 320px) and (max-width: 992px) {
+                        @media (min-width: 320px) and (max-width: 767px) {
                             font-size: 16px;
                         }
                     }
@@ -55,6 +55,9 @@
                         font-size: 15px;
                         padding: 10px 15px;
                         align-self: flex-start;
+                        @media (min-width: 320px) and (max-width: 767px) {
+                            margin-top: 15px;
+                        }
                     }
                 }
                 .carousel-indicator {
@@ -63,14 +66,15 @@
                     display: flex;
                     justify-content: space-between;
                     li {
-                        padding: 1rem 0 0;
+                        padding: 1rem 0;
                         color: #5d6b7e;
                         border-top: 1.5px solid #5d6b7e;
                         font-size: 15px;
                         max-width: 30%;
                         cursor: pointer;
-                        @media (min-width: 320px) and (max-width: 992px) {
+                        @media (min-width: 320px) and (max-width: 767px) {
                             font-size: 13px;
+                            padding: 1rem 0.7rem;
                         }
                         &.active {
                             color: #38506c;
@@ -108,11 +112,11 @@
             transform: translateY(-50%);
             display: flex;
             flex-direction: column;
-            @media (min-width: 320px) and (max-width: 992px) {
+            @media (min-width: 320px) and (max-width: 767px) {
                 top: 82%;
             }
             img {
-                @media (min-width: 320px) and (max-width: 992px) {
+                @media (min-width: 320px) and (max-width: 767px) {
                     width: 45px;
                 }
             }
