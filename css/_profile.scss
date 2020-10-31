@@ -1,0 +1,47 @@
+.profile {
+    height: 60vh;
+    background: url("../assets/profile.jpg") center center/cover;
+    @media (min-width: 320px) and (max-width: 992px) {
+        height: 55vh;
+    }
+    &__overlay {
+        height: 100%;
+        width: 100%;
+        background-color: rgba($color: #000000, $alpha: 0.3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        &__text {
+            width: 35%;
+            position: absolute;
+            left: 55%;
+            @media (min-width: 320px) and (max-width: 992px) {
+                width: 95%;
+                position: unset;
+                left: unset;
+                text-align: center;
+                margin: auto;
+            }
+            &__header {
+                color: #b04f4f;
+                font-size: 24px;
+            }
+            &__details {
+                color: white;
+                font-weight: 500;
+                font-size: 35px;
+                @media (min-width: 320px) and (max-width: 992px) {
+                    font-size: 30px;
+                }
+            }
+            &__link {
+                color: gray;
+                font-weight: 500;
+                &:hover {
+                    color: gray;
+                }
+            }
+        }
+    }
+}

@@ -9,7 +9,7 @@ function toggleMenu() {
 
 function handleWindowScrollEvent() {
     const mainNavbar = document.querySelector('.main__navbar');
-    window.scrollY > 450 ? mainNavbar.classList.add('bg-white') : mainNavbar.classList.remove('bg-white');
+    window.scrollY > 50 ? mainNavbar.classList.add('bg-white') : mainNavbar.classList.remove('bg-white');
 }
 
 function handleCarouselControls() {
@@ -35,9 +35,9 @@ Array.from(document.querySelectorAll('.carousel .carousel-indicator li')).forEac
 window.addEventListener('scroll', handleWindowScrollEvent);
 
 
-$('.carousel').on('slide.bs.carousel', function (event) {
+$('.carousel').on('slide.bs.carousel', function(event) {
     const $targetIndicator = $(this).find(`.carousel-indicator li[data-slide-to="${event.to}"]`);
-    if($targetIndicator) {
+    if ($targetIndicator) {
         $targetIndicator.siblings().removeClass('active');
         $targetIndicator.addClass('active');
     }

@@ -1,0 +1,35 @@
+.overview {
+    &__text {
+        &__title {
+            color: #b04f4f;
+            font-size: 24px;
+        }
+        &__header {
+            color: #38506c;
+            font-size: 35px;
+            font-weight: bold;
+            br {
+                @media (min-width: 320px) and (max-width: 1024px) {
+                    display: none;
+                }
+            }
+        }
+        &__details {
+            color: gray;
+        }
+        &__link {
+            color: #38506c;
+            font-weight: bold;
+            font-size: 15px;
+            &:hover {
+                color: #38506c;
+            }
+        }
+    }
+    &__img {
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}

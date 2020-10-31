@@ -1,55 +1,59 @@
 * {
-	scrollbar-width: thin;
-	scrollbar-color: #38506c #b04f4f;
-	// Chrome, Safari, Opera
-	::-webkit-scrollbar-thumb {
-		width: 6px;
-		height: 6px;
-		border-radius: 3px;
-		background-color: #b04f4f;
-	}
-	::-webkit-scrollbar-track {
-		background-color: #38506c;
-	}
-	::-webkit-scrollbar {
-		width: 6px;
-		height: 6px;
-	}
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
-	font-family: "Space Grotesk";
-	a {
-		&,
-		&:hover {
-			text-decoration: none;
-			color: black;
-		}
-	}
-	.btn {
-		font-size: 14px;
-		letter-spacing: 1px;
-		text-transform: uppercase;
-		&-lg {
-			padding: 20px 16px;
-		}
-		&:hover,
-		&:active,
-		&:focus {
-			box-shadow: none !important;
-		}
-		&-primary {
-			background: #b04f4f;
-			border: #b04f4f;
-			&:hover,
-			&:active,
-			&:focus {
-				background: darken($color: #b04f4f, $amount: 10) !important;
-			}
-		}
-	}
+    scrollbar-width: thin;
+    scrollbar-color: #38506c #b04f4f;
+    // Chrome, Safari, Opera
+     ::-webkit-scrollbar-thumb {
+        width: 6px;
+        height: 6px;
+        border-radius: 3px;
+        background-color: #b04f4f;
+    }
+     ::-webkit-scrollbar-track {
+        background-color: #38506c;
+    }
+     ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+    }
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Space Grotesk";
+    a {
+        &,
+        &:hover {
+            text-decoration: none;
+            color: black;
+        }
+    }
+    .btn {
+        font-size: 11px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        @media (min-width: 320px) and (max-width: 767px) {
+            font-size: 8px;
+        }
+        &-lg {
+            padding: 8px 15px;
+            border-radius: 0;
+        }
+        &:hover,
+        &:active,
+        &:focus {
+            box-shadow: none !important;
+        }
+        &-primary {
+            background: #b04f4f;
+            border: #b04f4f;
+            &:hover,
+            &:active,
+            &:focus {
+                background: darken($color: #b04f4f, $amount: 10) !important;
+            }
+        }
+    }
 }
 
 body {
-	overflow-x: hidden;
+    overflow-x: hidden;
 }
