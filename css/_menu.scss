@@ -46,6 +46,9 @@
                     &:not(:last-of-type) {
                         border-bottom: 1px solid #c7c7c7;
                     }
+                    @media (min-width: 320px) and (max-width: 767px) {
+                        font-size: 13px;
+                    }
                 }
             }
             &__main {
