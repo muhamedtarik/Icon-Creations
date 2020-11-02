@@ -7,7 +7,7 @@
     z-index: 2;
     background: white;
     @media (min-width: 320px) and (max-width: 767px) {
-        min-height: 68vh;
+        min-height: 55vh;
     }
     &:not(.show) {
         display: none;
