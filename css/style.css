@@ -223,7 +223,7 @@ body {
 
 @media (min-width: 320px) and (max-width: 767px) {
   .menu {
-    min-height: 70vh;
+    min-height: 60vh;
   }
 }
 
